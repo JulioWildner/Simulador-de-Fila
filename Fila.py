@@ -1,3 +1,4 @@
+play = True
 idoso=[]
 gestante=[]
 normal=[]
@@ -10,7 +11,7 @@ print('=> Ver a fila -------> (3) -  II          II     II        IIIIIIIIII    
 print('=> Sair -------------> (9) -  II       IIIIIIII  IIIIIII  II        II   =-')
 print('=-----------------------------------------------------------------------=-')
 ido = 1; ges = 1; nor = 1;
-while True:
+while play:
     x = int(input('=> O que gostaria de fazer: '))
     if x == 1:
         print('=----------------------=-')
@@ -53,6 +54,6 @@ while True:
         print('Fila das Gestantes ->',', '.join(gestante))
         print('Fila de Normais ---->',', '.join(normal))
     elif x == 9:
-        break
+        play = False
     else:
         print('INVÁLIDO!!!')
